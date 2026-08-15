@@ -14,7 +14,7 @@ public record CargoResponseDTO(
         return new CargoResponseDTO(
                 cargo.getId(),
                 cargo.getNome(),
-                cargo.getDescriao()
+                cargo.getDescricao()
         );
     }
 
