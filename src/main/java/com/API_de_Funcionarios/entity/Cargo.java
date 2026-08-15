@@ -23,7 +23,7 @@ public class Cargo {
     private String nome;
 
     @Column(length = 200)
-    private String descriao;
+    private String descricao;
 
     @OneToMany(mappedBy = "cargo")
     private List<Funcionario> funcionarios;
