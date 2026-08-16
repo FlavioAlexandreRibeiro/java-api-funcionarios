@@ -42,7 +42,7 @@ public class FuncionarioController {
     }
 
 
-    @GetMapping("/{cpf}")
+    @GetMapping("/cpf")
     public FuncionarioResponseDTO buscarPorCpf(@RequestParam String cpf) {
         return funcionarioService.buscarPorCpf(cpf);
     }
