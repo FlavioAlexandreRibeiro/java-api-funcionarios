@@ -1,6 +1,5 @@
 package com.API_de_Funcionarios.exception;
 
-
 import lombok.Getter;
 
 import java.time.LocalDateTime;
@@ -14,17 +13,20 @@ public class ErroResponse {
     private LocalDateTime timestamp;
     private Map<String, String> erros;
 
-    public ErroResponse(int status,
-                        String mensagem,
-                        LocalDateTime timestamp) {
+    public ErroResponse(
+            int status,
+            String mensagem) {
+
         this.status = status;
         this.mensagem = mensagem;
         this.timestamp = LocalDateTime.now();
     }
 
-    public ErroResponse(int status,
-                        String mensagem,
-                        Map<String, String> erros) {
+    public ErroResponse(
+            int status,
+            String mensagem,
+            Map<String, String> erros) {
+
         this.status = status;
         this.mensagem = mensagem;
         this.timestamp = LocalDateTime.now();
