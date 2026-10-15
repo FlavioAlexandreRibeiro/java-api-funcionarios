@@ -398,6 +398,7 @@ API-de-Funcionarios/
 │   └── test/
 │       └── java/com/API_de_Funcionarios/
 │           └── service/        # Testes unitários
+├── Postman_Collection_API_Funcionarios.json
 ├── pom.xml
 └── README.md
 ```
@@ -431,6 +432,16 @@ A API retorna códigos de status HTTP apropriados:
 - **404 Not Found:** Recurso não encontrado
 - **409 Conflict:** Nome, CPF ou e-mail já cadastrado, ou cargo em uso
 - **500 Internal Server Error:** Erro interno no servidor
+
+## 📝 Coleção Postman
+
+Uma coleção Postman está disponível no arquivo `Postman_Collection_API_Funcionarios.json` para facilitar os testes dos endpoints.
+
+Para importar:
+1. Abra o Postman
+2. Clique em "Import"
+3. Selecione o arquivo `Postman_Collection_API_Funcionarios.json`
+4. A coleção será carregada com todos os endpoints organizados
 
 ## 🤝 Contribuindo
 
